@@ -1,0 +1,36 @@
+<html>
+<head>
+<head>
+<body>
+<script type="text/javascript">
+  var Image=new Array("img/img1.jpg","img/img2.jpg","img/img3.jpg","img/img4.jpg","img/img5.jpg");
+  var Image_Number=0;
+  var Image_Length=Image.length-1;
+  function change_image(num){
+    Image_Number=Image_Number+num;
+    if(Image_Number>Image_Length){
+    Image_Number=0;
+   }
+ if(Image_Number<0){
+    Image_Number=Image_Length;
+    }
+   document.slideshow.src=Image[Image_Number];
+return false;
+}
+function auto(){
+setInterval("change_image(1)",3000);
+}
+</script>
+<div style ="text-align: center">
+<img src="img/img1.jpg" name="slideshow" width=500px height=500px  />
+
+<table align="center">
+  <tr >
+      <td text-align="left"><a href="javascript.html" onclick="return change_image(-1)">Previous</a></td>
+<td align ="center"><a href="javascript:change_image(1)">Next</a></td>
+<td  text-align="center"><a href="javascript:auto()">Auto</a></td>   
+</tr>
+</table>
+</div>
+</body>
+</html>

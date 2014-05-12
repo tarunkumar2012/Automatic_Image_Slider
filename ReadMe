@@ -1,0 +1,8 @@
+                        Automatic_Image_Slider 
+Have used Basic CSS and JavaScript  to Create this  SlideShow.
+This slider  con­tain five pan­els.
+It's a slideshow that hides the previous link at the beginning and the next link when you're at the end of the slideshow. 
+Have written an  unordered list con­tain­ing four images.
+I am using images that are roughly 960 ×720.
+The first image will be the one show­ing on page load.
+The oth­ers will be hid­den so that we can fade them in when they are selec­ted.
